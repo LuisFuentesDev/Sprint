@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FECB01"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#1B61A8"
+        android:gravity="center|start"
+        android:padding="10sp"
+        android:text="Información de Contacto Mario Bros"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLinkedin"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAboutMe"
+        app:srcCompat="@drawable/icons8_linkedin_48" />
+
+    <ImageView
+        android:id="@+id/imageWhatsApp"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageLinkedin"
+        app:layout_constraintStart_toStartOf="@+id/imageLinkedin"
+        app:layout_constraintTop_toBottomOf="@+id/imageLinkedin"
+        app:srcCompat="@drawable/icons8_whatsapp_48" />
+
+    <Button
+        android:id="@+id/buttonLinkedin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_weight="1"
+        android:text="Linkedin"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLinkedin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAboutMe"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/buttonWhatsApp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="Llamar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageWhatsApp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLinkedin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonLinkedin" />
+
+    <EditText
+        android:id="@+id/editNewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="New Message"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/imageWhatsApp" />
+
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="16dp"
+        android:text="Contactarme"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewMessage"
+        app:layout_constraintVertical_bias="0.586" />
+</androidx.constraintlayout.widget.ConstraintLayout>
