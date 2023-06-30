@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Sprint</string>
+    <string name="a_os_de_experiencia_2">Años de Experiencia 2</string>
+    <string name="nivel_de_motivaci_n_altamente_comprometido">Nivel de Motivación Altamente Comprometido</string>
+    <string name="informaci_n_contacto">Información Contacto</string>
+    <string name="informacion_contacto">Información Contacto</string>
+    <string name="mario_bros_fontanero">Mario Bros Fontanero</string>
+    <string name="todo">TODO</string>
 </resources>

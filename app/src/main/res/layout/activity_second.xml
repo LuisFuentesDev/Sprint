@@ -27,7 +27,7 @@
         android:layout_width="89dp"
         android:layout_height="87dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textAboutMe"
         app:srcCompat="@drawable/icons8_linkedin_48" />
@@ -70,21 +70,22 @@
 
     <EditText
         android:id="@+id/editNewMessage"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="New Message"
+        android:hint="Mensaje"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.83"
         app:layout_constraintStart_toStartOf="@+id/imageWhatsApp"
-        app:layout_constraintTop_toBottomOf="@+id/imageWhatsApp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonContact"
         android:layout_width="250dp"
         android:layout_height="70dp"
+        android:layout_marginTop="2dp"
         android:layout_marginBottom="16dp"
         android:text="Contactarme"
         android:textSize="30sp"
@@ -93,5 +94,17 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editNewMessage"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ENVIAR MENSAJE AL CORREO:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonWhatsApp"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="@+id/imageWhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/imageWhatsApp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

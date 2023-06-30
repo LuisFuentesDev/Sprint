@@ -1,14 +1,11 @@
 package com.example.sprint;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-
 import com.example.sprint.databinding.ActivityMainBinding;
-import com.example.sprint.databinding.ActivitySecondBinding;
+
 
 public class MainActivity extends AppCompatActivity {
 

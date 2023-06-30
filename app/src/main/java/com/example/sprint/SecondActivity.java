@@ -1,13 +1,10 @@
 package com.example.sprint;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-
-import com.example.sprint.databinding.ActivityMainBinding;
 import com.example.sprint.databinding.ActivitySecondBinding;
 
 public class SecondActivity extends AppCompatActivity {
@@ -30,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
         binding.buttonWhatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View buttonLinkedin) {
-                String numeroTelefono = "+56989147834";
+                String numeroTelefono = "+56955478512";
 
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:" + numeroTelefono));

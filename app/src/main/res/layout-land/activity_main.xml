@@ -7,48 +7,60 @@
     android:background="#FECB01"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageSecondPerfil"
-        android:layout_width="671dp"
-        android:layout_height="132dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="19dp"
-        tools:srcCompat="@drawable/miyamoto_nintendo_working_on_ideas_for_next_consol_47vs" />
-
     <TextView
         android:id="@+id/textExperience"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="64dp"
-        android:gravity="center"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageSecondPerfil"
-        app:layout_constraintHorizontal_bias="0.53"
-        app:layout_constraintStart_toStartOf="@+id/imageSecondPerfil"
-        app:layout_constraintTop_toBottomOf="@+id/imageSecondPerfil" />
+        android:layout_marginTop="12dp"
+        android:background="#1B61A8"
+        android:gravity="center|start"
+        android:paddingStart="10sp"
+        android:text="@string/a_os_de_experiencia_2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonShare"
+        app:layout_constraintStart_toStartOf="@+id/buttonShare"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShare"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
         android:id="@+id/textMotivation"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/textExperience"
+        android:layout_marginBottom="16dp"
+        android:background="#1B61A8"
+        android:gravity="center|start"
+        android:paddingStart="10sp"
+        android:text="@string/nivel_de_motivaci_n_altamente_comprometido"
+        android:textColor="#FDFDFD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textExperience"
-        app:layout_constraintTop_toBottomOf="@+id/textExperience" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textExperience"
+        tools:ignore="RtlSymmetry" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonShare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Información Contacto"
+        android:layout_marginTop="20dp"
+        android:text="@string/informaci_n_contacto"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textExperience"
-        app:layout_constraintEnd_toEndOf="@+id/imageSecondPerfil"
-        app:layout_constraintStart_toStartOf="@+id/imageSecondPerfil"
-        app:layout_constraintTop_toBottomOf="@+id/imageSecondPerfil"
-        app:layout_constraintVertical_bias="0.562" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="630dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mario_bros"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
