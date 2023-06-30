@@ -30,8 +30,10 @@ public class SecondActivity extends AppCompatActivity {
         binding.buttonWhatsApp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View buttonLinkedin) {
-                String url = "https://www.whatsapp.com/?lang=es";
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                String numeroTelefono = "+56989147834";
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + numeroTelefono));
                 startActivity(intent);
             }
         });
